@@ -15,7 +15,7 @@ namespace GradesChecker
         {
             new DriverManager().SetUpDriver(new ChromeConfig());
             ChromeOptions options = new ChromeOptions();
-            options.AddArgument("headless");
+            options.AddArgument("--headless=new");
             ChromeDriverService service = ChromeDriverService.CreateDefaultService();
             service.HideCommandPromptWindow = true;
             service.SuppressInitialDiagnosticInformation = true;
